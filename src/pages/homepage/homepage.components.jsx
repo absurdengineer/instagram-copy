@@ -1,9 +1,8 @@
 import React from 'react'
 import PostContainer from '../../components/post-container/post-container.components';
 
-
 const HomePage = () => {
-    return ( 
+    return (
         <div>
             <PostContainer /> 
         </div>
