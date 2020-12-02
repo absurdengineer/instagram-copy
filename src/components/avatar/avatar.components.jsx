@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Avatar = (props) => {
     return ( 
         <div className="nav-item avatar p-3">
-            <a className="nav-link d-inline" href="/">
+            <Link className="nav-link d-inline" to="/">
             <img src={`${props.imageUrl}`} className="rounded-circle z-depth-0 border"
                 alt="avatar" height={`${props.height}`} />
-            </a>
-            <a className="nav-link p-2 d-inline font-weight-bold" href={`/profile/${props.uname}`}>
+            </Link>
+            <Link className="nav-link p-2 d-inline font-weight-bold" to={`/profile/${props.uname}`}>
                 <span>{props.uname}</span>
-            </a>
+            </Link>
         </div>
      );
 }

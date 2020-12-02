@@ -3,8 +3,8 @@ import Avatar from '../avatar/avatar.components'
 import Post from "../post/post.components"
 import posts from "../../assets/posts" 
 
-const PostContainer = () => {
-
+const PostContainer = ({currentUser}) => {
+    console.log(currentUser)
     return ( 
         <div className="container mt-5 pt-3">
             <div className="row">

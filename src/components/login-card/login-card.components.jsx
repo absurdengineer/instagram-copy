@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import {signInWithGoogle, signInWithFacebook} from '../../firebase/firebase.utils.js'
 
@@ -23,6 +24,7 @@ class LoginCard extends React.Component {
             <div className="pt-2">
                 <button type="button" className="btn btn-red waves-effect" onClick={signInWithGoogle}>Sign in with <i className="fab fa-google"></i></button>
                 <button type="button" className="btn btn-blue waves-effect" onClick={signInWithFacebook}>Sign in with <i className="fab fa-facebook"></i></button>
+                <p className="mt-3">Create New Account <Link to='/signup' className="font-weight-bold">Sign Up</Link> here.</p>
             </div>
 
         </div>

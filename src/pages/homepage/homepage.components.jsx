@@ -1,10 +1,11 @@
 import React from 'react'
 import PostContainer from '../../components/post-container/post-container.components';
 
-const HomePage = () => {
+const HomePage = ({currentUser}) => {
+    console.log(currentUser)
     return (
         <div>
-            <PostContainer /> 
+            <PostContainer currentUser={currentUser} /> 
         </div>
      );
 }

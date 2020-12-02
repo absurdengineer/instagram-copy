@@ -35,13 +35,13 @@ class App extends React.Component {
   }
 
   render(){
-    console.log(this.state.currentUser)
     return (
     <BrowserRouter>
       <Header currentUser={this.state.currentUser} />  
       <Switch>
-        <Route currentUser={this.state.currentUser} exact path='/' component={HomePage} />
-        <Route currentUser={this.state.currentUser} exact path='/login' component={LoginPage} />
+        <Route exact path='/' component={() => <HomePage currentUser={this.state.currentUser} />} />
+        <Route exact path='/login' component={() => <LoginPage currentUser={this.state.currentUser} />} />
+        <Route exact path='/signup' component={() => <LoginPage currentUser={this.state.currentUser} signUp={true} />} />
         <Route exact path='/profile/:uname' component={Profile} />
       </Switch>
     </BrowserRouter>
