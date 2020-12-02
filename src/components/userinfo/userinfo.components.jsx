@@ -12,7 +12,7 @@ const UserInfo = props => {
     return (
         <div className="row pt-4">
             <div className="col-md-5 text-center">
-                <Avatar imageUrl="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" height="150" />
+                <Avatar imageUrl={user.profilePic} height="150" />
             </div>
             <div className="col-md-7">
                 <h3 className="mt-4">{props.uname}</h3>

@@ -2,7 +2,7 @@
 const users = [
     {
         id : "dilshad_i_am",
-        profilePic : "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+        profilePic : "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
         name : "Md. Dilshad Alam",
         followers : 135,
         followings : 0,
@@ -10,7 +10,7 @@ const users = [
     },
     {
         id : "rebel_partha9",
-        profilePic : "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+        profilePic : "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
         name : "Partha Mandal",
         followers : 235,
         followings : 30,
@@ -18,7 +18,7 @@ const users = [
     },
     {
         id : "belal8080",
-        profilePic : "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+        profilePic : "https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg",
         name : "Shakil Ahmad",
         followers : 202,
         followings : 20,
