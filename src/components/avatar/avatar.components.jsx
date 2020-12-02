@@ -7,7 +7,7 @@ const Avatar = (props) => {
             <img src={`${props.imageUrl}`} className="rounded-circle z-depth-0 border"
                 alt="avatar" height={`${props.height}`} />
             </a>
-            <a className="nav-link p-2 d-inline" href={`/profile/${props.uname}`}>
+            <a className="nav-link p-2 d-inline font-weight-bold" href={`/profile/${props.uname}`}>
                 <span>{props.uname}</span>
             </a>
         </div>

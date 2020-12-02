@@ -5,9 +5,7 @@ import users from '../../assets/users';
 
 const Post = (props) => {
     const uname = props.postedBy
-    console.log(uname)
     const user = users.find(user => user.id === uname)
-    console.log(user)
     return ( 
     <div className="card mb-2">
         <Avatar 

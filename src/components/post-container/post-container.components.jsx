@@ -13,8 +13,8 @@ const PostContainer = () => {
                     </div>
                     {posts.map(post => <Post key={post.id} postedBy={post.postedBy} likes={post.likes} image={post.image} caption={post.caption} datePosted={post.datePosted} />)}
                 </div>
-                <div className="col-md-5 mt-5 " style={{position:"fixed", right : 110}}>
-                    <Avatar height="65" uname="dilshad_i_am" imageUrl="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
+                <div className="col-md-5 mt-5 " style={{position:"fixed", right : 105}}>
+                    <Avatar height="55" uname="dilshad_i_am" imageUrl="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" />
                 </div>  
             </div>
         </div>
