@@ -9,10 +9,10 @@ const LoginPage = props => {
         {!props.signUp ?
             <div className="row">
                 
-                <div className="col-md-6 text-right">
+                <div className="col-md-6 text-right mt-5">
                     <img src={loginImage} alt=""/>
                 </div>
-                <div className="col-md-6 p-5 mt-5">
+                <div className="col-md-6 p-5 mt-4">
                     <LoginCard />
                 </div>
                 

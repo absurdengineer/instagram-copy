@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import {signInWithGoogle, signInWithFacebook} from '../../firebase/firebase.utils.js'
+import LoginForm from '../login-form/login-form.components'
 
 class LoginCard extends React.Component {
     state = {  }
@@ -18,7 +19,7 @@ class LoginCard extends React.Component {
                 </div>
 
             </div>
-
+            <LoginForm />
             <hr className="my-4"/>
 
             <div className="pt-2">
