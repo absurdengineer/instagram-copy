@@ -8,6 +8,7 @@ import LoginPage from './pages/login/login.components';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils'
 
 class App extends React.Component {
+  
   state= {
     currentUser : null
   }

@@ -27,16 +27,40 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
     if(!snapShot.exists){
         let {displayName,email} = userAuth
+        
         const createdAt = new Date()
         try{
-            await userRef.set({
-                displayName,
-                email,
-                createdAt,
-                ...additionalData
-            })
+            if(!displayName){
+                let {displayName} = additionalData
+                console.log(displayName)
+                let username = displayName.toLowerCase().replace(/ /g,"_")
+                const result = Math.random().toString(36).substring(2,7);
+                username += result
+                additionalData = null
+                console.log(result);
+                await userRef.set({
+                    displayName,
+                    email,
+                    username,
+                    createdAt,
+                    ...additionalData
+                })
+            }else{
+                let username = displayName.toLowerCase().replace(/ /g,"_")
+                const result = Math.random().toString(36).substring(2,7);
+                username += result
+                console.log(result);
+                await userRef.set({
+                    displayName,
+                    email,
+                    username,
+                    createdAt,
+                    ...additionalData
+                })
+            }
+            
         }catch(error){
-            console.log(`Error Creating User : ${error.message}`)
+            alert(`Error Creating User : ${error.message}`)
         }
     }
     return userRef
